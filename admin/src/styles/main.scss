@@ -1,0 +1,31 @@
+@use './root.scss';
+@use './iconify.scss';
+@use './markdown.scss';
+@use './nprogress.scss';
+@use './element/custom.scss';
+@use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body,
+#app {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html.dark {
+  color-scheme: dark;
+  background: var(--el-html-color-dark);
+}
+
+input:-webkit-autofill {
+  transition: color 100s, background-color 100s;
+}

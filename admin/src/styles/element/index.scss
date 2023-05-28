@@ -1,0 +1,48 @@
+// https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/src/common/var.scss
+
+@use 'element-plus/theme-chalk/src/mixins/function.scss' as *;
+
+// You should use them in scss, because we calculate it by sass.
+// comment next lines to use default color
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+
+  $colors: (
+    'primary': (
+      'base': #2fc8fc,
+    ),
+    'success': (
+      'base': #21ba45,
+    ),
+    'warning': (
+      'base': #f2711c,
+    ),
+    'danger': (
+      'base': #db2828,
+    ),
+    'error': (
+      'base': #db2828,
+    ),
+    'info': (
+      'base': #42b8dd,
+    ),
+  ),
+  $border-radius: (
+    'base': '5px',
+  ),
+  $message: (
+    'padding': '9px 12px',
+  ),
+  $table: (
+    'header-bg-color': getCssVar('color-primary'),
+    'header-text-color': getCssVar('color-white'),
+  ),
+  $card: (
+    'border-radius': 10px,
+  ),
+);
+
+// if you want to import all
+// @use "element-plus/theme-chalk/src/index.scss" as *;
+
+// custom dark variables
+@use './dark.scss';

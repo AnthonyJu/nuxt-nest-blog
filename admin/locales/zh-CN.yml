@@ -1,0 +1,35 @@
+layout:
+  exitLogin: 退出登陆
+  exitLoginLoading: 退出中
+  exitLoginMessage: 此操作将退出登录, 是否继续?
+  exitLoginTip: 提示
+  switchTheme: 切换主题
+  title: Awesome App
+menu:
+  '401': 鉴权失败
+  index: 首页
+  login: 登录
+  notFound: 未找到
+  article: 我的文章
+  article-write: 写文章
+  template: CURD模版
+  personal: 个人中心
+  tag: 标签管理
+  system: 系统管理
+  system-menu: 菜单管理
+  system-role: 角色管理
+  system-user: 用户管理
+pages:
+  '401':
+    back-to-home: 返回首页
+    not-authorized: 您未被授权，或授权已过期~
+    not-authorized-message: 您可以先检查用户重新授权或给管理员反馈问题。
+    reauthorize: 重新授权
+  '404':
+    back-to-home: 返回首页
+    page-not-found: 地址输入错误，请重新输入地址~
+    page-not-found-message: ' 您可以先检查网址，然后重新输入或给管理员反馈问题。'
+  login:
+    login: 登录
+    password: 请输入密码
+    username: 请输入用户名

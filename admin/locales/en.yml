@@ -1,0 +1,39 @@
+layout:
+  exitLogin: Exit Login
+  exitLoginLoading: Exiting
+  exitLoginMessage: This operation will log out, do you want to continue?
+  exitLoginTip: Tip
+  switchTheme: Switch Theme
+  title: Awesome App
+menu:
+  '401': Auth Failed
+  index: Index
+  login: Login
+  notFound: Not Found
+  personal: Personal Center
+  article: My Article
+  article-write: Write Article
+  template: Template
+  tag: Tag Manager
+  system: System Manage
+  system-menu: Menu Manager
+  system-role: Role Manager
+  system-user: User Manager
+pages:
+  '401':
+    back-to-home: Back to Home
+    not-authorized: You are not authorized or your authorization has expired~
+    not-authorized-message: >-
+      You can first check the user's re authorization or give feedback to the
+      administrator.
+    reauthorize: Reauthorize
+  '404':
+    back-to-home: Back to Home
+    page-not-found: Address input error, please re-enter the address~
+    page-not-found-message: >-
+      You can check the URL first, and then re-enter or give feedback to the
+      administrator.
+  login:
+    login: Login
+    password: Please input a password
+    username: Please input a user name
