@@ -7,6 +7,8 @@ import { AppModule } from './app.module'
 import { Response } from './common/response'
 import { HttpFilter } from './common/filter'
 
+// 允许跨域
+
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule)
   app.useStaticAssets(join(__dirname, 'static'), { prefix: '/static' })
@@ -14,8 +16,9 @@ async function bootstrap() {
   app.useGlobalFilters(new HttpFilter())
   app.useGlobalPipes(new ValidationPipe())
   app.setGlobalPrefix('/blog')
+  app.enableCors({
+    origin: '*',
+  })
   await app.listen(3000)
 }
 bootstrap()
-
-// TODO 接口权限

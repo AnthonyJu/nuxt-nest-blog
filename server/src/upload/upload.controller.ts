@@ -51,8 +51,6 @@ export class UploadController {
         if (!err) fs.unlinkSync(path)
       })
     }
-    // TODO 找到body.id对应的用户，将其avatar字段更新为file.filename
-
     return '/static/' + file.filename
   }
 }

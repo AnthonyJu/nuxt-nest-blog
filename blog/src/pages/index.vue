@@ -3,7 +3,7 @@
     <div class="grid w-full gap-20px" :class="`grid-cols-${gridNum}`">
       <div
         v-for="article in articles" :key="article.id"
-        class="h-250px flex-col-center overflow-hidden rounded-3 bg-#ffffff99 dark:bg-#00000099"
+        class="h-250px flex-col-center cursor-pointer overflow-hidden rounded-3 bg-#ffffff99 dark:bg-#00000099"
         @click="$router.push(`/article/${article.id}`)"
       >
         <img h-150px w-full object="cover" :src="apiPrefix + article.poster">
@@ -14,7 +14,7 @@
 
         <div class="flex items-end px-10px pb-10px text-left text-14px opacity-55">
           <div i-carbon-calendar-heat-map mr-5px />
-          <div>{{ formatTimeAgo(new Date(article.updateTime)) }} {{ article.updateTime }}</div>
+          <div>{{ formatTimeAgo(new Date(article.updateTime)) }}</div>
         </div>
       </div>
     </div>

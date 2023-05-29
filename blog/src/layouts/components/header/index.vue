@@ -43,7 +43,7 @@ const navList = [
   },
   {
     name: '密语',
-    path: '/cryptolalia',
+    path: '/',
   },
   {
     name: '实验室',
@@ -55,7 +55,7 @@ const navList = [
   },
   {
     name: '关于',
-    path: '/about',
+    path: '/',
   },
 ]
 </script>
